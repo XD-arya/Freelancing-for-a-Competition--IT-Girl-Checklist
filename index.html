@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IT GIRL CHECK LIST | Luxury Editorial</title>
+<!-- Premium High-Contrast Serif: Playfair Display for that high-fashion editorial look -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&amp;family=Manrope:wght@300;400;600;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "surface-container-high": "#2a2a2a",
+                      "on-primary-fixed-variant": "#661aa3",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface-container-lowest": "#0e0e0e",
+                      "on-surface-variant": "#cfc2d4",
+                      "on-primary": "#4a007f",
+                      "inverse-primary": "#803abd",
+                      "inverse-on-surface": "#303030",
+                      "primary-fixed": "#f1dbff",
+                      "on-surface": "#e2e2e2",
+                      "on-primary-fixed": "#2d0050",
+                      "tertiary-container": "#494b4c",
+                      "background": "#131313",
+                      "on-tertiary-container": "#babbbb",
+                      "outline-variant": "#4c4452",
+                      "on-secondary-fixed-variant": "#544600",
+                      "on-secondary-fixed": "#221b00",
+                      "on-error": "#690005",
+                      "tertiary": "#c6c6c7",
+                      "surface": "#131313",
+                      "surface-container": "#1f1f1f",
+                      "on-primary-container": "#d7a8ff",
+                      "surface-container-low": "#1b1b1b",
+                      "error-container": "#93000a",
+                      "on-background": "#e2e2e2",
+                      "surface-variant": "#353535",
+                      "secondary-fixed-dim": "#e9c400",
+                      "on-secondary-container": "#725f00",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "on-tertiary": "#2f3131",
+                      "tertiary-fixed": "#e2e2e2",
+                      "surface-bright": "#393939",
+                      "primary-container": "#6b21a8",
+                      "inverse-surface": "#e2e2e2",
+                      "surface-tint": "#dfb7ff",
+                      "surface-container-highest": "#353535",
+                      "primary-fixed-dim": "#dfb7ff",
+                      "outline": "#988d9e",
+                      "secondary-container": "#ffdb3c",
+                      "error": "#ffb4ab",
+                      "on-error-container": "#ffdad6",
+                      "primary": "#dfb7ff",
+                      "surface-dim": "#131313",
+                      "on-secondary": "#3a3000",
+                      "secondary-fixed": "#ffe16d",
+                      "secondary": "#fff9ef"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Playfair Display"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #0f071a; color: #e2e2e2; scroll-behavior: smooth; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glam-scroll::-webkit-scrollbar { width: 4px; }
+        .glam-scroll::-webkit-scrollbar-track { background: #0f071a; }
+        .glam-scroll::-webkit-scrollbar-thumb { background: #6b21a8; border-radius: 10px; }
+        .gold-shimmer { background: linear-gradient(45deg, rgba(255,215,0,0.05) 25%, transparent 25%, transparent 50%, rgba(255,215,0,0.05) 50%, rgba(255,215,0,0.05) 75%, transparent 75%, transparent); background-size: 4px 4px; }
+        .it-highlight {
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 20px rgba(233,196,0,1), 0 0 40px rgba(233,196,0,0.6);
+            color: #e9c400 !important;
+        }
+        .it-highlight::before {
+            content: '';
+            position: absolute;
+            inset: -4px -8px;
+            background: rgba(233,196,0,0.25);
+            z-index: -1;
+            transform: skew(-10deg);
+            border-radius: 4px;
+            filter: blur(4px);
+        }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        .faq-card[open] .faq-icon { transform: rotate(180deg); }
+        .color-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+        .color-circle:hover { transform: scale(1.2); }
+        .color-circle.active { border-color: #e2e2e2; }
+        .design-chip {
+            padding: 4px 12px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 9999px;
+            font-size: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .design-chip:hover { background: rgba(255,255,255,0.1); }
+        .design-chip.active { background: #e9c400; color: #000; border-color: #e9c400; }
+        
+        .notification {
+            position: fixed;
+            top: 100px;
+            right: -100%;
+            background: #6b21a8;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(107,33,168,0.5);
+            transition: right 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            z-index: 100;
+        }
+        .notification.show {
+            right: 20px;
+        }
+        
+        .nav-btn {
+            color: #d7a8ff;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-btn.active {
+            color: #e9c400;
+            border-bottom-color: #e9c400;
+        }
+        .nav-btn:not(.active):hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="glam-scroll">
+
+<div id="toast" class="notification flex items-center gap-3">
+    <span class="material-symbols-outlined">check_circle</span>
+    <span id="toast-message">Added to collection!</span>
+</div>
+
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 backdrop-blur-xl shadow-[0_10px_30px_-15px_rgba(107,33,168,0.3)] bg-[#0f071a]/80">
+<div class="flex justify-between items-center px-6 md:px-10 py-6 max-w-[1920px] mx-auto">
+<a href="index.html" class="text-xl md:text-3xl font-playfair italic font-black text-purple-600 dark:text-purple-500 tracking-tighter hover:scale-105 transition-transform duration-300 cursor-pointer">
+<span class="it-highlight">IT</span> GIRL CHECK LIST 💅
+</a>
+<div class="flex items-center gap-4 md:gap-6">
+<a href="cart.html" class="relative group">
+    <span class="material-symbols-outlined text-purple-500 group-hover:scale-110 transition-transform duration-300 cursor-pointer" data-icon="shopping_bag">shopping_bag</span>
+    <span id="cart-count" class="absolute -top-2 -right-2 bg-secondary-fixed-dim text-black text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center opacity-0 transition-opacity">0</span>
+</a>
+</div>
+</div>
+<div class="bg-gradient-to-r from-transparent via-purple-900/30 to-transparent h-[1px] w-full"></div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[70vh] md:h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-[#0f071a]">
+<div class="absolute inset-0 gold-shimmer opacity-30"></div>
+<div class="relative z-10 max-w-5xl w-full">
+<h1 class="text-6xl md:text-9xl font-playfair font-black italic tracking-tighter text-white mb-6 leading-[1.1]">
+<span class="it-highlight inline-block mr-2 md:mr-4">IT</span>GIRL <br class="md:hidden"/><span class="text-secondary-fixed-dim drop-shadow-[0_0_15px_rgba(233,196,0,0.4)]">CHECK LIST</span> 💅
+        </h1>
+<p class="text-lg md:text-2xl font-playfair tracking-[0.15em] md:tracking-widest text-on-surface-variant uppercase mb-4 px-4 whitespace-nowrap">
+            BUY <span class="text-secondary-fixed-dim font-bold">IT</span>. FLAUNT <span class="text-secondary-fixed-dim font-bold">IT</span>. CLOCK <span class="text-secondary-fixed-dim font-bold">IT</span>.
+        </p>
+<p class="text-xs md:text-sm font-label tracking-[0.3em] text-primary italic">Your glow. Your rules.</p>
+</div>
+</header>
+<!-- The Curated Kits -->
+<section class="py-12 md:py-24 bg-[#0f071a] px-6 relative" id="combos">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 md:mb-20">
+<h2 class="text-4xl md:text-6xl font-playfair font-black italic text-white mb-4">THE CURATED KITS</h2>
+<p class="text-primary font-label tracking-[0.5em] text-[10px] md:text-xs uppercase">Unlock your ultimate version</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Soft Girl Kit -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col border border-outline-variant/10 transition-all duration-300 hover:scale-[1.05] hover:bg-slate-900 hover:border-primary hover:shadow-[0_0_40px_rgba(107,33,168,0.5)]">
+<h3 class="text-3xl font-playfair text-white mb-2">Soft Girl Kit</h3>
+<p class="text-secondary-fixed-dim font-body font-black text-3xl mb-8">₹100</p>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Regular Nails</li>
+<li class="flex items-center gap-3 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Charm Earrings</li>
+</ul>
+<button onclick="addToCart('Soft Girl Kit', 100, './soft.png', 'Curated Kit')" class="w-full py-4 bg-white/5 text-white border border-white/20 font-label text-xs tracking-widest uppercase hover:bg-secondary-fixed-dim hover:text-black hover:border-secondary-fixed-dim transition-all">Claim Identity</button>
+</div>
+<!-- That Girl Kit (Featured) -->
+<div class="relative bg-surface-container-low p-8 rounded-2xl flex flex-col border border-outline-variant/10 transition-all duration-300 hover:scale-[1.05] hover:bg-slate-900 hover:border-primary hover:shadow-[0_0_40px_rgba(107,33,168,0.5)] overflow-hidden my-4 md:my-0">
+<div class="absolute top-0 right-0 bg-secondary-fixed-dim text-black font-label font-black text-[10px] tracking-widest px-4 py-2 uppercase">MOST POPULAR</div>
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/10 via-transparent to-transparent pointer-events-none"></div>
+<h3 class="text-3xl font-playfair text-white mb-2">That Girl Kit</h3>
+<p class="text-secondary-fixed-dim font-body font-black text-4xl mb-8">₹150</p>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-white text-sm"><span class="material-symbols-outlined text-secondary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">stars</span> Bejeweled Nails</li>
+<li class="flex items-center gap-3 text-white text-sm"><span class="material-symbols-outlined text-secondary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">stars</span> Charm Earrings (Two Pairs)</li>
+</ul>
+<button onclick="addToCart('That Girl Kit', 150, './that.png', 'Self-Care Ritual')" class="w-full py-4 bg-white/5 text-white border border-white/20 font-label text-xs tracking-widest uppercase hover:bg-secondary-fixed-dim hover:text-black hover:border-secondary-fixed-dim transition-all">Claim Identity</button>
+</div>
+<!-- Main Character Kit -->
+<div class="bg-surface-container-low p-8 rounded-2xl flex flex-col border border-outline-variant/10 transition-all duration-300 hover:scale-[1.05] hover:bg-slate-900 hover:border-primary hover:shadow-[0_0_40px_rgba(107,33,168,0.5)]">
+<div class="text-red-500 font-label font-black text-[9px] tracking-widest mb-4 uppercase flex items-center gap-2">
+<span class="material-symbols-outlined text-xs">timer</span> Limited slots available
+                </div>
+<h3 class="text-3xl font-playfair text-white mb-2">Main Character</h3>
+<p class="text-secondary-fixed-dim font-body font-black text-3xl mb-8">₹200</p>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Custom Nails</li>
+<li class="flex items-center gap-3 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Charm Earrings</li>
+<li class="flex items-center gap-3 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Abstract Wire Ring</li>
+</ul>
+<button onclick="addToCart('Main Character', 200, './main.png', 'Curated Kit'); window.open('https://wa.me/917720950170?text=Hi,%20I%20want%20to%20check%20designs%20for%20custom%20nails%20in%20main%20character%20kit', '_blank')" class="w-full py-4 bg-white/5 text-white border border-white/20 font-label text-xs tracking-widest uppercase hover:bg-secondary-fixed-dim hover:text-black hover:border-secondary-fixed-dim transition-all">Claim Identity</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Sticky Nav -->
+<div class="sticky top-[72px] md:top-[84px] z-40 backdrop-blur-md bg-[#0f071a]/95">
+<div class="flex justify-center border-b border-primary/20 overflow-x-auto no-scrollbar">
+<a class="nav-btn active px-6 md:px-8 py-4 text-[10px] md:text-xs font-label font-bold tracking-[0.2em] whitespace-nowrap transition-all duration-300" href="#nails">NAILS</a>
+<a class="nav-btn px-6 md:px-8 py-4 text-[10px] md:text-xs font-label font-bold tracking-[0.2em] whitespace-nowrap transition-all duration-300" href="#tattoos">TATTOOS</a>
+<a class="nav-btn px-6 md:px-8 py-4 text-[10px] md:text-xs font-label font-bold tracking-[0.2em] whitespace-nowrap transition-all duration-300" href="#jewellery">JEWELLERY</a>
+</div>
+</div>
+<main class="max-w-7xl mx-auto px-6 py-16 md:py-24 space-y-24 md:space-y-32">
+<!-- Nails Section -->
+<section class="scroll-mt-40" id="nails">
+<div class="flex items-baseline gap-4 mb-12 md:mb-16">
+<h2 class="text-4xl md:text-5xl font-playfair font-black italic text-white uppercase">Nails</h2>
+<div class="flex-grow h-[1px] bg-gradient-to-r from-primary/50 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-low p-1 rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(107,33,168,0.3)] border border-outline-variant/20 hover:border-primary">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-6">
+<img alt="Regular Nails" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="./regular.jpeg"/>
+</div>
+<div class="px-6 pb-8">
+<h3 class="text-2xl font-playfair text-white mb-2">Regular Nails</h3>
+<p class="text-secondary-fixed-dim font-body font-extrabold text-xl">₹80</p>
+<button onclick="addToCart('Regular Nails', 80, './regular.jpeg', 'Nail Art')" class="mt-6 w-full py-3 bg-primary-container text-white text-xs font-label tracking-widest uppercase hover:bg-primary transition-colors">ADD TO COLLECTION</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-low p-1 rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(107,33,168,0.3)] border border-outline-variant/20 hover:border-primary">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-6">
+<img alt="Bejeweled Nails" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="./bejewelled.jpeg"/>
+</div>
+<div class="px-6 pb-8">
+<h3 class="text-2xl font-playfair text-white mb-2">Bejeweled Nails</h3>
+<p class="text-secondary-fixed-dim font-body font-extrabold text-xl">₹100</p>
+<button onclick="addToCart('Bejeweled Nails', 100, './bejewelled.jpeg', 'Atelier Craft')" class="mt-6 w-full py-3 bg-primary-container text-white text-xs font-label tracking-widest uppercase hover:bg-primary transition-colors">ADD TO COLLECTION</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-low p-1 rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(107,33,168,0.3)] border border-outline-variant/20 hover:border-primary">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-6">
+<img alt="Custom Nails" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="./custom.jpeg"/>
+</div>
+<div class="px-6 pb-8 text-center md:text-left">
+<h3 class="text-2xl font-playfair text-white mb-2">Custom Nails</h3>
+<p class="text-secondary-fixed-dim font-body font-extrabold text-xl">₹150</p>
+<p class="mt-2 text-[10px] font-label font-bold tracking-widest text-primary-fixed-dim opacity-80 uppercase">PRE-BOOK ONLY</p>
+<button onclick="window.open('https://wa.me/917720950170?text=Hi,%20I%20want%20to%20check%20designs%20of%20Custom%20Nails', '_blank')" class="mt-6 w-full py-3 bg-primary-container text-white text-xs font-label tracking-widest uppercase hover:bg-primary transition-colors">CLAIM SLOT</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Tattoos Section -->
+<section class="scroll-mt-40" id="tattoos">
+<div class="flex items-baseline gap-4 mb-12 md:mb-16">
+<h2 class="text-4xl md:text-5xl font-playfair font-black italic text-white uppercase">Tattoos</h2>
+<div class="flex-grow h-[1px] bg-gradient-to-r from-primary/50 to-transparent"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+<div class="group relative overflow-hidden bg-surface-container-high rounded-xl flex flex-col md:flex-row items-center border border-outline-variant/10">
+<div class="w-full md:w-1/2 aspect-square">
+<img alt="Small Tattoo" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="./smol.jpeg"/>
+</div>
+<div class="p-8 md:p-10 w-full md:w-1/2">
+<span class="text-primary font-label text-[10px] tracking-[0.3em] uppercase mb-2 block">Minimalist</span>
+<h3 class="text-3xl font-playfair text-white mb-4">Small Tattoo</h3>
+<p class="text-secondary-fixed-dim font-body font-black text-2xl mb-6">₹15</p>
+<button onclick="window.open('https://wa.me/917720950170?text=Hi,%20I%20want%20to%20check%20designs%20of%20Small%20Tattoo', '_blank')" class="px-8 py-3 border border-secondary-fixed-dim text-secondary-fixed-dim text-xs font-label tracking-widest uppercase hover:bg-secondary-fixed-dim hover:text-black transition-all">CHECK DESIGNS</button>
+</div>
+</div>
+<div class="group relative overflow-hidden bg-surface-container-high rounded-xl flex flex-col md:flex-row items-center border border-outline-variant/10">
+<div class="w-full md:w-1/2 aspect-square">
+<img alt="Large Tattoo" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="./beeg.jpeg"/>
+</div>
+<div class="p-8 md:p-10 w-full md:w-1/2">
+<span class="text-primary font-label text-[10px] tracking-[0.3em] uppercase mb-2 block">Statement</span>
+<h3 class="text-3xl font-playfair text-white mb-4">Large Tattoo</h3>
+<p class="text-secondary-fixed-dim font-body font-black text-2xl mb-6">₹30</p>
+<button onclick="window.open('https://wa.me/917720950170?text=Hi,%20I%20want%20to%20check%20designs%20of%20Large%20Tattoo', '_blank')" class="px-8 py-3 border border-secondary-fixed-dim text-secondary-fixed-dim text-xs font-label tracking-widest uppercase hover:bg-secondary-fixed-dim hover:text-black transition-all">CHECK DESIGNS</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Jewellery Section -->
+<section class="scroll-mt-40" id="jewellery">
+<div class="flex items-baseline gap-4 mb-12 md:mb-16">
+<h2 class="text-4xl md:text-5xl font-playfair font-black italic text-white uppercase">Jewellery</h2>
+<div class="flex-grow h-[1px] bg-gradient-to-r from-primary/50 to-transparent"></div>
+</div>
+<div class="space-y-20 md:space-y-24">
+<!-- Earrings -->
+<div>
+<h3 class="text-sm font-label tracking-[0.4em] text-primary uppercase mb-10 text-center">The Earring Edit</h3>
+<div class="max-w-xl mx-auto">
+<!-- Charm Earrings Only -->
+<div class="group bg-surface-container-low p-1 rounded-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(107,33,168,0.3)] border border-outline-variant/20 hover:border-primary">
+<div class="aspect-video overflow-hidden rounded-lg mb-6">
+<img alt="Charm Earrings" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="./chan erngs.jpeg"/>
+</div>
+<div class="px-6 pb-8">
+<h3 class="text-2xl font-playfair text-white mb-2">Charm Earrings</h3>
+<div class="flex gap-4 items-center mb-2">
+<p class="text-secondary-fixed-dim font-body font-extrabold text-xl">₹30 <span class="text-slate-500 text-[10px] font-normal uppercase tracking-widest ml-1">Single</span></p>
+<p class="text-secondary-fixed-dim font-body font-extrabold text-xl">₹50 <span class="text-slate-500 text-[10px] font-normal uppercase tracking-widest ml-1">Pair</span></p>
+</div>
+<button onclick="window.open('https://wa.me/917720950170?text=Hi,%20I%20want%20to%20check%20designs%20of%20Charm%20Earrings', '_blank')" class="mt-6 w-full py-3 bg-primary-container text-white text-xs font-label tracking-widest uppercase hover:bg-primary transition-colors">CHECK DESIGNS</button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full h-[1px] bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+<!-- Rings -->
+<div>
+<h3 class="text-sm font-label tracking-[0.4em] text-primary uppercase mb-10 text-center">The Ring Stack</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Tiny Beaded Ring -->
+<div class="bg-surface-container-low p-8 md:p-10 text-center border-t-2 border-primary/20">
+<h4 class="text-2xl font-playfair text-white mb-2">Tiny Beaded Ring</h4>
+<p class="text-secondary-fixed-dim font-body font-black text-xl mb-6">₹35</p>
+<img alt="Tiny Beaded Ring" class="w-40 h-40 md:w-48 md:h-48 object-cover mx-auto rounded-full mb-8 border-4 border-primary/10 shadow-xl" src="./bead.jpeg"/>
+<!-- Color selection -->
+<div class="flex justify-center gap-3 mb-6">
+<div class="color-circle bg-black active" title="Black" onclick="selectColor(this)"></div>
+<div class="color-circle bg-white" title="White" onclick="selectColor(this)"></div>
+<div class="color-circle bg-blue-600" title="Blue" onclick="selectColor(this)"></div>
+<div class="color-circle bg-teal-500" title="Teal" onclick="selectColor(this)"></div>
+<div class="color-circle bg-green-600" title="Green" onclick="selectColor(this)"></div>
+</div>
+<button onclick="addToCart('Tiny Beaded Ring', 35, './bead.jpeg', 'Ring')" class="w-full max-w-xs mx-auto py-3 bg-secondary-fixed-dim text-black font-label font-black text-xs tracking-widest uppercase hover:scale-105 transition-transform shadow-[0_0_15px_rgba(233,196,0,0.3)]">ADD TO COLLECTION</button>
+</div>
+<!-- Wire Ring -->
+<div class="bg-surface-container-low p-8 md:p-10 text-center border-t-2 border-primary/20">
+<h4 class="text-2xl font-playfair text-white mb-2">Wire Ring</h4>
+<p class="text-secondary-fixed-dim font-body font-black text-xl mb-6">₹35</p>
+<img alt="Wire Ring" class="w-40 h-40 md:w-48 md:h-48 object-cover mx-auto rounded-full mb-8 border-4 border-primary/10 shadow-xl" src="./wire.jpeg"/>
+<!-- Color & Design Options -->
+<div class="space-y-4 mb-6">
+<!-- Removed Gold Color Picker as per request -->
+<div class="flex flex-wrap justify-center gap-2">
+<div class="design-chip active" onclick="selectDesign(this)">Wavy</div>
+<div class="design-chip" onclick="selectDesign(this)">Square</div>
+<div class="design-chip" onclick="selectDesign(this)">Abstract</div>
+</div>
+</div>
+<button onclick="addToCart('Wire Ring', 35, './wire.jpeg', 'Ring')" class="w-full max-w-xs mx-auto py-3 bg-secondary-fixed-dim text-black font-label font-black text-xs tracking-widest uppercase hover:scale-105 transition-transform shadow-[0_0_15px_rgba(233,196,0,0.3)]">ADD TO COLLECTION</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-12 md:py-24 border-t border-primary/10" id="faq">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-3xl md:text-5xl font-playfair font-black italic text-white text-center mb-16 uppercase tracking-tighter">Everything you need to know</h2>
+<div class="space-y-6">
+<details class="faq-card group bg-surface-container-low rounded-xl border border-outline-variant/10 overflow-hidden">
+<summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer select-none">
+<h3 class="text-lg md:text-xl font-playfair text-white">Nail Art &amp; Extensions Care</h3>
+<span class="faq-icon material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+</summary>
+<div class="px-6 pb-8 md:px-8 md:pb-10 text-on-surface-variant leading-relaxed text-sm md:text-base space-y-4">
+<p>Our "It Girl" services feature high-quality nail extensions crafted with premium materials for maximum durability and a natural luxury look. These are professional-grade enhancements that can last 3-4 weeks with proper care.</p>
+<p><strong class="text-primary uppercase tracking-widest text-[10px]">Care Guide:</strong> Avoid using your nails as tools, wear gloves when handling harsh chemicals, and apply cuticle oil daily to maintain the bond and health of your natural nail bed.</p>
+</div>
+</details>
+<details class="faq-card group bg-surface-container-low rounded-xl border border-outline-variant/10 overflow-hidden">
+<summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer select-none">
+<h3 class="text-lg md:text-xl font-playfair text-white">Temporary Tattoo Safety &amp; Duration</h3>
+<span class="faq-icon material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+</summary>
+<div class="px-6 pb-8 md:px-8 md:pb-10 text-on-surface-variant leading-relaxed text-sm md:text-base space-y-4">
+<p>We use professional-grade, cosmetic-safe temporary ink that provides a realistic "inked" look without the commitment. These are non-toxic, skin-safe, and applied using industry-standard sterile techniques.</p>
+<p><strong class="text-primary uppercase tracking-widest text-[10px]">Longevity:</strong> Depending on skin type and placement, our professional temporary tattoos typically last between 7 to 14 days.</p>
+</div>
+</details>
+<details class="faq-card group bg-surface-container-low rounded-xl border border-outline-variant/10 overflow-hidden">
+<summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer select-none">
+<h3 class="text-lg md:text-xl font-playfair text-white">Jewellery Materials &amp; Longevity</h3>
+<span class="faq-icon material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+</summary>
+<div class="px-6 pb-8 md:px-8 md:pb-10 text-on-surface-variant leading-relaxed text-sm md:text-base">
+<p>Our collection features a mix of gold-plated finishes and high-quality tarnish-resistant alloys. Each piece comes with a care guide to ensure it stays "It Girl" status forever.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-purple-900/20 bg-[#0f071a]">
+<div class="flex flex-col items-center justify-center py-12 px-6 gap-8 text-center">
+<div class="space-y-4">
+<p class="text-yellow-500 font-manrope uppercase tracking-[0.1em] text-[12px] font-black">BUY <span class="font-black underline decoration-2 underline-offset-4">IT</span>. FLAUNT <span class="font-black underline decoration-2 underline-offset-4">IT</span>. CLOCK <span class="font-black underline decoration-2 underline-offset-4">IT</span>.</p>
+</div>
+<div class="pt-8 opacity-40">
+<p class="text-[9px] font-label tracking-[0.5em] text-white uppercase">Powered by Glow Syndicate</p>
+</div>
+</div>
+</footer>
+<script>
+    function getCart() {
+        return JSON.parse(localStorage.getItem('itGirlCart')) || [];
+    }
+    
+    function saveCart(cart) {
+        localStorage.setItem('itGirlCart', JSON.stringify(cart));
+        updateCartCount();
+    }
+    
+    function updateCartCount() {
+        const cart = getCart();
+        const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+        const countEl = document.getElementById('cart-count');
+        
+        if (count > 0) {
+            countEl.textContent = count;
+            countEl.style.opacity = '1';
+        } else {
+            countEl.style.opacity = '0';
+        }
+    }
+
+    function addToCart(name, price, img, category) {
+        const cart = getCart();
+        const existing = cart.find(item => item.name === name);
+        
+        if (existing) {
+            existing.quantity += 1;
+        } else {
+            cart.push({ name, price, img, category, quantity: 1, id: Date.now() });
+        }
+        
+        saveCart(cart);
+        if (typeof renderActionStates === 'function') renderActionStates();
+        showToast(name + ' added!');
+    }
+    
+    function updateCartQuantity(name, change) {
+        let cart = getCart();
+        const itemIndex = cart.findIndex(it => it.name === name);
+        if (itemIndex > -1) {
+            cart[itemIndex].quantity += change;
+            if (cart[itemIndex].quantity <= 0) {
+                cart.splice(itemIndex, 1);
+            }
+            saveCart(cart);
+            if (typeof renderActionStates === 'function') renderActionStates();
+        }
+    }
+
+    function renderActionStates() {
+        const cart = getCart();
+        document.querySelectorAll('.action-container').forEach(container => {
+            const itemName = container.dataset.item;
+            const cartItem = cart.find(c => c.name === itemName);
+            
+            const isKit = container.closest('#combos') !== null;
+            const extraClasses = isKit ? 'py-4' : 'py-3 mt-6';
+            
+            if (cartItem && cartItem.quantity > 0) {
+                container.innerHTML = `
+                    <div class="flex items-center justify-between bg-white/10 border border-secondary-fixed-dim text-white w-full rounded-md ${extraClasses} px-6 shadow-[0_0_15px_rgba(233,196,0,0.2)]" style="box-sizing: border-box;">
+                        <button onclick="updateCartQuantity('${itemName}', -1)" class="material-symbols-outlined text-secondary-fixed-dim hover:scale-125 transition-transform" style="font-size: 24px;">remove</button>
+                        <span class="font-bold font-body text-lg md:text-xl text-secondary-fixed-dim">${cartItem.quantity}</span>
+                        <button onclick="updateCartQuantity('${itemName}', 1)" class="material-symbols-outlined text-secondary-fixed-dim hover:scale-125 transition-transform" style="font-size: 24px;">add</button>
+                    </div>
+                `;
+            } else {
+                container.innerHTML = container.dataset.originalHtml;
+            }
+        });
+    }
+    
+    function showToast(msg) {
+        const toast = document.getElementById('toast');
+        document.getElementById('toast-message').textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+    
+    function selectColor(el) {
+        let siblings = el.parentElement.children;
+        for(let sibling of siblings) sibling.classList.remove('active', 'border-white', 'border-gray-200');
+        el.classList.add('active');
+        // A bit hacky to fix specific Tailwind class styles dynamically
+        el.style.borderColor = '#e2e2e2';
+        for(let sibling of siblings) {
+            if (sibling !== el) sibling.style.borderColor = 'transparent';
+        }
+    }
+    
+    function selectDesign(el) {
+        let siblings = el.parentElement.children;
+        for(let sibling of siblings) sibling.classList.remove('active');
+        el.classList.add('active');
+    }
+
+    // Initialize cart count and action containers on load
+    document.addEventListener('DOMContentLoaded', () => {
+        updateCartCount();
+        
+        document.querySelectorAll('button[onclick^="addToCart"]').forEach(btn => {
+            const match = btn.getAttribute('onclick').match(/addToCart\('([^']+)'/);
+            if (match) {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'action-container';
+                wrapper.dataset.item = match[1];
+                wrapper.dataset.originalHtml = btn.outerHTML;
+                btn.parentNode.insertBefore(wrapper, btn);
+                wrapper.appendChild(btn);
+            }
+        });
+        
+        renderActionStates();
+    });
+    // Add Nav menu scroll and click logic
+    const navBtns = document.querySelectorAll('.nav-btn');
+    navBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            navBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+</script>
+</body></html>
